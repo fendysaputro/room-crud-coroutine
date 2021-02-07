@@ -1,7 +1,6 @@
 package id.phephen.roomcrud.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import id.phephen.roomcrud.databinding.ItemUserBinding
