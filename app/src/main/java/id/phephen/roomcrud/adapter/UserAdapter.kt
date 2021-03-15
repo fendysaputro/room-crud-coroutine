@@ -26,13 +26,13 @@ class UserAdapter (var users: ArrayList<User>, var listener: OnAdapterListener) 
     class UserViewHolder(private val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: User, listener: OnAdapterListener) {
             binding.tvName.text = item.name
-            binding.tvName.setOnClickListener {
-                listener.onClick(item)
-            }
             binding.tvDate.text = item.date
-            binding.tvDate.setOnClickListener {
+            binding.tvPhone.text = item.phone
+
+            itemView.setOnClickListener {
                 listener.onClick(item)
             }
+
             binding.iconDelete.setOnClickListener {
                 listener.onDelete(item)
             }

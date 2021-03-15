@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             arrayListOf(),
             object : UserAdapter.OnAdapterListener {
                 override fun onClick(user: User) {
-                    Toast.makeText(this@MainActivity, user.name + " " + user.date, Toast.LENGTH_SHORT).show()
+                    onUserClicked(user)
                 }
 
                 override fun onDelete(user: User) {
@@ -94,6 +94,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         dialog.show()
+    }
+
+    private fun onUserClicked(user: User) {
+        val intent = Intent(this, AddActivity::class.java)
+        intent.putExtra("data", user)
+        startActivity(intent)
     }
 
     private fun onBtnAddClicked() {

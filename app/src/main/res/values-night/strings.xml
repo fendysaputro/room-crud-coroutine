@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RoomCrud</string>
     <string name="txt_name">name</string>
     <string name="txt_birthday">Birthday date</string>
     <string name="txt_phone">Phone Number</string>

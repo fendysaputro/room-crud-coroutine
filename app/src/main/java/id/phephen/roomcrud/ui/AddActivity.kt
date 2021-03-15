@@ -16,6 +16,7 @@ class AddActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddBinding
     private lateinit var etName: EditText
     private lateinit var etDate: EditText
+    private lateinit var etPhone: EditText
     private lateinit var btnSave: Button
 
     private val db by lazy { UserDB(this) }
@@ -31,6 +32,7 @@ class AddActivity : AppCompatActivity() {
     private fun initView() {
         etName = binding.etName
         etDate = binding.etDate
+        etPhone = binding.etPhone
         btnSave = binding.btnSave
     }
 
@@ -40,7 +42,8 @@ class AddActivity : AppCompatActivity() {
                 db.userDao().addUser(
                         User(0,
                         etName.text.toString(),
-                        etDate.text.toString())
+                        etDate.text.toString(),
+                            etPhone.text.toString())
                 )
                 finish()
             }
