@@ -1,6 +1,7 @@
 package id.phephen.roomcrud.model
 
 import android.os.Parcelable
+import android.provider.ContactsContract
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -23,8 +24,8 @@ data class User(
     @ColumnInfo(name = "name")
     val name: String,
 
-    @ColumnInfo(name = "date")
-    val date: String,
+    @ColumnInfo(name = "email")
+    val email: String,
 
     @ColumnInfo(name = "phone")
     val phone: String

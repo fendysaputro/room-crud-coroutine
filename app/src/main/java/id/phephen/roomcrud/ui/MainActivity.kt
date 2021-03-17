@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onUserClicked(user: User) {
-        val intent = Intent(this, AddActivity::class.java)
+        val intent = Intent(this, DetailUserActivity::class.java)
         intent.putExtra("data", user)
         startActivity(intent)
     }
