@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomCrud">
+        <activity android:name=".ui.MapsActivity"></activity>
         <activity android:name=".ui.DetailUserActivity" />
         <activity android:name=".ui.AddActivity" />
         <activity android:name=".ui.MainActivity">
@@ -25,7 +26,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_api_key" />
-
     </application>
 
 </manifest>

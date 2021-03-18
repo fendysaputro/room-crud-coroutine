@@ -97,8 +97,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onUserClicked(user: User) {
-        val intent = Intent(this, DetailUserActivity::class.java)
-        intent.putExtra("data", user)
+        val intent = Intent(this, MapsActivity::class.java)
         startActivity(intent)
     }
 
